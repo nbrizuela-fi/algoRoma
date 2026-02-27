@@ -32,4 +32,7 @@ public class Novato implements Estado {
         return defensa;
     }
 
+    public double modificarPesada(int defensa) {
+        return defensa;
+    }
 }

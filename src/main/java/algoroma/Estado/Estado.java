@@ -18,4 +18,6 @@ public interface Estado {
     public double modificarEscamas(int defensa);
 
     public double modificarEscudo(int defensa);
+
+    public double modificarPesada(int defensa);
 }

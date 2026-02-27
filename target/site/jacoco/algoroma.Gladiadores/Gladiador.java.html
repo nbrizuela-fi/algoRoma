@@ -15,50 +15,59 @@ public class Gladiador {
     private ArrayList&lt;Arma&gt; armas;
     private Armadura armadura;
     private Estado estado;
+    private String nombre;
 
-<span class="fc" id="L19">    public Gladiador(Arma... armas) {</span>
-<span class="fc" id="L20">        this.armas = new ArrayList&lt;&gt;(Arrays.asList(armas));</span>
-<span class="fc" id="L21">        this.armadura = new Escudo();</span>
-<span class="fc" id="L22">        this.estado = new Novato();</span>
+<span class="fc" id="L20">    public Gladiador(Arma... armas) {</span>
+<span class="fc" id="L21">        this.armas = new ArrayList&lt;&gt;(Arrays.asList(armas));</span>
+<span class="fc" id="L22">        this.armadura = new Escudo();</span>
+<span class="fc" id="L23">        this.estado = new Novato();</span>
 
-<span class="fc" id="L24">    }</span>
+<span class="fc" id="L25">    }</span>
+
+    public void setNombre(String nombre) {
+<span class="fc" id="L28">        this.nombre = nombre;</span>
+<span class="fc" id="L29">    }</span>
+
+    public String getNombre() {
+<span class="fc" id="L32">        return nombre;</span>
+    }
 
     public void obtenerArmadura(Armadura aramdura) {
 
-<span class="fc" id="L28">        this.armadura = aramdura;</span>
-<span class="fc" id="L29">    }</span>
+<span class="fc" id="L37">        this.armadura = aramdura;</span>
+<span class="fc" id="L38">    }</span>
 
     public double calcularDaño() {
-<span class="fc" id="L32">        return (0.6 * this.pg()) + (0.4 * this.defensa());// escudo</span>
+<span class="fc" id="L41">        return (0.6 * this.pg()) + (0.4 * this.defensa());// escudo</span>
     }
 
     public double defensa() {
-<span class="fc" id="L36">        return this.armadura.defensa(this.estado);</span>
+<span class="fc" id="L45">        return this.armadura.defensa(this.estado);</span>
     }
 
     public int pg() {
-<span class="fc" id="L40">        int sumador = 0;</span>
-<span class="fc bfc" id="L41" title="All 2 branches covered.">        for (Arma arma : armas) {</span>
-<span class="fc" id="L42">            sumador += arma.pg(this.estado);</span>
+<span class="fc" id="L49">        int sumador = 0;</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        for (Arma arma : armas) {</span>
+<span class="fc" id="L51">            sumador += arma.pg(this.estado);</span>
 
-<span class="fc" id="L44">        }</span>
-<span class="fc" id="L45">        return sumador;</span>
+<span class="fc" id="L53">        }</span>
+<span class="fc" id="L54">        return sumador;</span>
     }
 
     public int pg_base() {
-<span class="fc" id="L49">        return this.armas.stream().mapToInt(arma -&gt; arma.pg_base()).sum();</span>
+<span class="fc" id="L58">        return this.armas.stream().mapToInt(arma -&gt; arma.pg_base()).sum();</span>
     }
 
     public Gladiador pelearContra(Gladiador otro) {
-<span class="nc bnc" id="L53" title="All 2 branches missed.">        if (this.calcularDaño() &gt; otro.calcularDaño()) {</span>
-<span class="nc" id="L54">            return this;</span>
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">        if (this.calcularDaño() &gt; otro.calcularDaño()) {</span>
+<span class="nc" id="L63">            return this;</span>
         }
-<span class="nc" id="L56">        return otro;</span>
+<span class="fc" id="L65">        return otro;</span>
     }
 
     public void ascender() {
 
-<span class="fc" id="L61">        this.estado = this.estado.ascender();</span>
-<span class="fc" id="L62">    }</span>
+<span class="fc" id="L70">        this.estado = this.estado.ascender();</span>
+<span class="fc" id="L71">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

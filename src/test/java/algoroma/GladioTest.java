@@ -63,4 +63,33 @@ public class GladioTest {
 
         assertEquals(valorEsperado, maximo.calcularDaño());
     }
+
+    @Test
+    public void test06UnGladiadorAsciendeDosVeces() {
+        double valorEsperado = 570.0;
+
+        Gladiador maximo = new Gladiador(new Espada());
+        maximo.ascender();
+        maximo.ascender();
+
+        assertEquals(valorEsperado, maximo.calcularDaño());
+    }
+
+    @Test
+    public void testo07DosGladiadoresPelean() {
+        Gladiador maximo = new Gladiador(new Espada(), new Jabalina());
+        maximo.setNombre("maximo");
+        maximo.obtenerArmadura(new Pesada());
+
+        Gladiador meridio = new Gladiador(new Tridente());
+        meridio.obtenerArmadura(new Escamas());
+        meridio.setNombre("meridio");
+
+        meridio.ascender();
+
+        Gladiador ganador = maximo.pelearContra(meridio);
+
+        assertEquals("meridio", ganador.getNombre());
+
+    }
 }

@@ -15,12 +15,21 @@ public class Gladiador {
     private ArrayList<Arma> armas;
     private Armadura armadura;
     private Estado estado;
+    private String nombre;
 
     public Gladiador(Arma... armas) {
         this.armas = new ArrayList<>(Arrays.asList(armas));
         this.armadura = new Escudo();
         this.estado = new Novato();
 
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     public void obtenerArmadura(Armadura aramdura) {

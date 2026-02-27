@@ -6,7 +6,7 @@
 <span class="fc" id="L6">public class Senior implements Estado {</span>
 
     public Estado ascender() {
-<span class="nc" id="L9">        return new Senior();// tengoq ue cambiarlo al otro</span>
+<span class="fc" id="L9">        return new Leyenda();</span>
     }
 
     public double modificarEspada(int daño) {
@@ -28,6 +28,10 @@
 
     public double modificarEscudo(int defensa) {
 <span class="fc" id="L30">        return defensa;</span>
+    }
+
+    public double modificarPesada(int defensa) {
+<span class="nc" id="L34">        return defensa + (defensa * 0.5);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

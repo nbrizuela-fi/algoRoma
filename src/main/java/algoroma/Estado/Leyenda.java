@@ -1,36 +1,35 @@
 package algoroma.Estado;
 
 /**
- * Senior
+ * Leyenda
  */
-public class Senior implements Estado {
+public class Leyenda implements Estado {
 
     public Estado ascender() {
-        return new Leyenda();
+        return this;
     }
 
     public double modificarEspada(int daño) {
-        return daño + (daño * 0.25);
-
+        return daño + (daño * 0.50);
     }
 
     public double modificarJabalina(int daño) {
-        return daño;
+        return daño * 2;
     }
 
     public double modificarTridente(int daño) {
-        return daño;
+        return daño + 500;
     }
 
     public double modificarEscamas(int defensa) {
-        return defensa;
+        return defensa + 750;
     }
 
     public double modificarEscudo(int defensa) {
-        return defensa;
+        return defensa * 2;
     }
 
     public double modificarPesada(int defensa) {
-        return defensa + (defensa * 0.5);
+        return 750;
     }
 }

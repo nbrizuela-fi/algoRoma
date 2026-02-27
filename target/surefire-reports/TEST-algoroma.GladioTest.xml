@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="algoroma.GladioTest" time="0.082" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="algoroma.GladioTest" time="0.478" tests="7" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="21"/>
+    <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/mnt/data/fcu/alg3/final/algoRoma/algoroma/target/test-classes:/mnt/data/fcu/alg3/final/algoRoma/algoroma/target/classes:/home/nath22bz/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/nath22bz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/nath22bz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/nath22bz/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/nath22bz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/nath22bz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/nath22bz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/nath22bz/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/nath22bz/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/home/nath22bz/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/home/nath22bz/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/home/nath22bz/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/nath22bz/.m2/repository/com/tngtech/archunit/archunit/1.4.1/archunit-1.4.1.jar:/home/nath22bz/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/nath22bz/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:"/>
+    <property name="java.class.path" value="/home/nata/cod/algo3/final/algoRoma/algoRoma/target/test-classes:/home/nata/cod/algo3/final/algoRoma/algoRoma/target/classes:/home/nata/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/nata/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/nata/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/nata/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/nata/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/nata/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/nata/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/nata/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/nata/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/home/nata/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/home/nata/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/home/nata/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/nata/.m2/repository/com/tngtech/archunit/archunit/1.4.1/archunit-1.4.1.jar:/home/nata/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/nata/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:"/>
     <property name="java.vm.vendor" value="Arch Linux"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://openjdk.org/"/>
     <property name="os.name" value="Linux"/>
-    <property name="java.vm.specification.version" value="21"/>
+    <property name="java.vm.specification.version" value="25"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AR"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk/lib"/>
-    <property name="sun.java.command" value="/mnt/data/fcu/alg3/final/algoRoma/algoroma/target/surefire/surefirebooter1647663816052288887.jar /mnt/data/fcu/alg3/final/algoRoma/algoroma/target/surefire 2026-02-26T19-39-06_153-jvmRun1 surefire3983479939378556948tmp surefire_07092677326523470204tmp"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-25-openjdk/lib"/>
+    <property name="sun.java.command" value="/home/nata/cod/algo3/final/algoRoma/algoRoma/target/surefire/surefirebooter8959290667757908317.jar /home/nata/cod/algo3/final/algoRoma/algoRoma/target/surefire 2026-02-26T23-31-53_971-jvmRun1 surefire11852867465270168969tmp surefire_014222559032834909273tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/mnt/data/fcu/alg3/final/algoRoma/algoroma/target/test-classes:/mnt/data/fcu/alg3/final/algoRoma/algoroma/target/classes:/home/nath22bz/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/nath22bz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/nath22bz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/nath22bz/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/nath22bz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/nath22bz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/nath22bz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/nath22bz/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/nath22bz/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/home/nath22bz/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/home/nath22bz/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/home/nath22bz/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/nath22bz/.m2/repository/com/tngtech/archunit/archunit/1.4.1/archunit-1.4.1.jar:/home/nath22bz/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/nath22bz/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:"/>
+    <property name="surefire.test.class.path" value="/home/nata/cod/algo3/final/algoRoma/algoRoma/target/test-classes:/home/nata/cod/algo3/final/algoRoma/algoRoma/target/classes:/home/nata/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/nata/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/nata/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/nata/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/nata/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/nata/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/nata/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/nata/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/nata/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/home/nata/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/home/nata/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/home/nata/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/nata/.m2/repository/com/tngtech/archunit/archunit/1.4.1/archunit-1.4.1.jar:/home/nata/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/nata/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/nath22bz"/>
+    <property name="user.home" value="/home/nata"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2026-01-20"/>
-    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk"/>
+    <property name="java.home" value="/usr/lib/jvm/java-25-openjdk"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/mnt/data/fcu/alg3/final/algoRoma/algoroma"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="basedir" value="/home/nata/cod/algo3/final/algoRoma/algoRoma"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/mnt/data/fcu/alg3/final/algoRoma/algoroma/target/surefire/surefirebooter1647663816052288887.jar"/>
+    <property name="surefire.real.class.path" value="/home/nata/cod/algo3/final/algoRoma/algoRoma/target/surefire/surefirebooter8959290667757908317.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="21.0.10+7"/>
-    <property name="user.name" value="nath22bz"/>
+    <property name="java.runtime.version" value="25.0.2"/>
+    <property name="user.name" value="nata"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.18.7-arch1-1"/>
+    <property name="os.version" value="6.18.9-arch1-2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/nath22bz/.m2/repository"/>
+    <property name="localRepository" value="/home/nata/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="21.0.10"/>
-    <property name="user.dir" value="/mnt/data/fcu/alg3/final/algoRoma/algoroma"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="/home/nata/cod/algo3/final/algoRoma/algoRoma"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -49,13 +49,16 @@
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="UTF-8"/>
     <property name="java.vendor" value="Arch Linux"/>
-    <property name="java.vm.version" value="21.0.10+7"/>
+    <property name="java.vm.version" value="25.0.2"/>
+    <property name="stdin.encoding" value="UTF-8"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="65.0"/>
+    <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="test03CalculaUnDañoBaseConEscudo" classname="algoroma.GladioTest" time="0.045"/>
-  <testcase name="test04UnGladiadorGana3Batallas" classname="algoroma.GladioTest" time="0.003"/>
-  <testcase name="testo02UnGladiadorConDosArmas" classname="algoroma.GladioTest" time="0.003"/>
-  <testcase name="test05GladiadorLegendarioCOnTRidenteJabalinaYEscamas" classname="algoroma.GladioTest" time="0.002"/>
-  <testcase name="test01CreoUnGladiador" classname="algoroma.GladioTest" time="0.001"/>
+  <testcase name="test03CalculaUnDañoBaseConEscudo" classname="algoroma.GladioTest" time="0.244"/>
+  <testcase name="test04UnGladiadorGana3Batallas" classname="algoroma.GladioTest" time="0.009"/>
+  <testcase name="test06UnGladiadorAsciendeDosVeces" classname="algoroma.GladioTest" time="0.006"/>
+  <testcase name="testo02UnGladiadorConDosArmas" classname="algoroma.GladioTest" time="0.013"/>
+  <testcase name="test05GladiadorLegendarioCOnTRidenteJabalinaYEscamas" classname="algoroma.GladioTest" time="0.018"/>
+  <testcase name="testo07DosGladiadoresPelean" classname="algoroma.GladioTest" time="0.012"/>
+  <testcase name="test01CreoUnGladiador" classname="algoroma.GladioTest" time="0.008"/>
 </testsuite>
